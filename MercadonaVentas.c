@@ -82,7 +82,7 @@ int main(){
 					printf("1)Base\n");
 					printf("Que producto desea agregar: \n");
 					printf("0)Salir\n")
-					scanf("%d", &menuAgregar);
+					scanf("%s", &menuAgregar);
 					switch (menuAgregar){
 						case 1:
 							do
@@ -107,7 +107,7 @@ int main(){
 				do
 				{
 					printf("Cliente pago con $: ");
-					scanf("%d", &dineroCliente);
+					scanf("%d", dineroCliente);
 					if (dineroCliente < 1 && dineroCliente < total)
 						printf("Ingrese un valor valido.\n");
 				} while (dineroCliente < 1 && dineroCliente < total);
